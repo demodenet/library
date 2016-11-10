@@ -1,0 +1,24 @@
+{
+  "paths": {
+    "root": "../",
+    "sources": "sources/",
+    "temp": "_temp/",
+    "results": "public/"
+  },
+  "dirs": {
+    "css": "css/",
+    "sass": "sass/",
+    "js": "js/",
+    "img": "img/",
+    "html": "html/",
+    "twig": "templates/",
+    "exclude": "vendors/"
+  },
+  "files": {
+    "scriptsSource": "main.js",
+    "scriptsResults": "scripts.js",
+    "stylesSource": "main.scss",
+    "stylesResults": "styles.css",
+    "twigGlobals": "_globals.json"
+  }
+}
