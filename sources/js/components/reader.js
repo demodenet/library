@@ -6,17 +6,8 @@ class Reader {
     }
 }
  
-var firstReader = new Reader(1, 'Sylwia', 'Rybicka');
- 
-console.log(firstReader.idReader);
+
+export default Reader;
 
 
 
-
-
-class Book {
-   constructor(titleBook){
-   	    this.titleBook = titleBook;
-   }
-
-}
