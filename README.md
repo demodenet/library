@@ -8,6 +8,7 @@
 
 2. lekcja 2
 - wejsc/wyjsc z biblioteki => zmiana dostepnych akcji dla uzytkownika
+- odczyt danych z json
 - console.log lista ksiazek dostepnych w bibliotece (start biblioteki)
 
 3. lekcja 3
