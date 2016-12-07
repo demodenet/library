@@ -1,6 +1,7 @@
-import Component from './components/component';
-import Reader from './components/reader';
-import Book from './components/book';
+import Reader from "./components/reader";
+import Library from "./components/library";
+// import Book from './components/book';
+
 
 class App {
     constructor() {
@@ -8,13 +9,12 @@ class App {
     }
 
     init() {
-        let component = new Component();
         let firstReader = new Reader(1, 'Sylwia', 'Rybicka');
-        let newBook = new Book('Abecadło');
 
-        component.printMessage();
+        /*let library =*/
+        new Library();
+
         console.log(firstReader);
-        console.log(newBook);
     }
 }
 
