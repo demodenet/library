@@ -4,6 +4,10 @@ class Book {
         this.id = obj.id;
     }
 
+    /**
+     * get title
+     * @returns {string|string|*|string}
+     */
     getTitle() {
         return this.title;
     }

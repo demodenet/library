@@ -23,10 +23,14 @@ class Library {
     getBooks() {
         return $.ajax({
             dataType: 'json',
-            url: '../js/data/bookList.json'
+            url: '../data/bookList.json'
         });
     }
 
+    /**
+     * przetwarzanie danych z json
+     * @param data
+     */
     processBooks(data) {
         data.books.forEach(this.assignBook.bind(this));
     }
