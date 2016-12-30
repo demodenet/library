@@ -4,20 +4,16 @@ class Library {
     constructor() {
         this.bookshelf = [];
         this.$ui = $('.ui');
+        this.$formButton = $('button');
 
         this.getBooks()
             .then(this.processBooks.bind(this))
-            .then(this.allowUI.bind(this));
-
-        this.bindUI();
-    }
-
-    allowUI() {
-        this.$ui.show();
+            .then(this.bindUI.bind(this));
     }
 
     bindUI() {
-        $('.js-list-books').on('click', this.listBooksTitle.bind(this));
+        this.$ui.filter('.js-list-books').on('click', this.listBooksTitle.bind(this));
+        this.$ui.show();
     }
 
     getBooks() {
@@ -44,6 +40,12 @@ class Library {
         this.bookshelf.forEach(book => {
             console.log(book.getTitle());
         });
+    }
+
+    processBooksForm(){
+        this.$formButton.on('click', function(){
+            console.log('sdcscd');
+        })
     }
 }
 
